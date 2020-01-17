@@ -1,1 +1,1 @@
-"# simple" 
+简单的springboot项目包含mybatis plus逆向工程自动创建model dao service controller
