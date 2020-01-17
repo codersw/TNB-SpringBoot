@@ -2,8 +2,8 @@ package ${package.Service};
 
 import ${package.Entity}.${entity};
 import ${superServiceClassPackage};
-import ${package.Entity}.common.PageRequest;
-import ${package.Entity}.common.PageResponse;
+import ${package.Entity}.PageRequest;
+import ${package.Entity}.PageResponse;
 
 /**
  * <p>

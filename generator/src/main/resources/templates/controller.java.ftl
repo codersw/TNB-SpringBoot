@@ -19,9 +19,9 @@ import ${superControllerClassPackage};
 </#if>
 import ${package.Service}.${table.serviceName};
 import ${package.Entity}.${entity};
-import ${package.Entity}.common.PageRequest;
-import ${package.Entity}.common.Result;
-import ${package.Entity}.common.ResultGenerator;
+import ${package.Entity}.PageRequest;
+import ${package.Entity}.Result;
+import ${package.Entity}.ResultGenerator;
 import javax.annotation.Resource;
 
 /**
