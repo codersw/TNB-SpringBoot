@@ -127,7 +127,7 @@ public class Generator {
         focList.add(new FileOutConfig(templateControllerPath) {
             @Override
             public String outputFile(TableInfo tableInfo) {
-                return projectPath + "/web/src/main/java/"+ pc.getParent().replace(".","/") + "/controller/" + tableInfo.getControllerName() + StringPool.DOT_JAVA;
+                return projectPath + "/web/src/main/java/"+ pc.getParent().replace(".","/") + "/web/controller/" + tableInfo.getControllerName() + StringPool.DOT_JAVA;
             }
         });
         cfg.setFileOutConfigList(focList);

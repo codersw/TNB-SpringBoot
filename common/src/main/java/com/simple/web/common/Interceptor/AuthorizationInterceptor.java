@@ -1,4 +1,4 @@
-package com.simple.common.Interceptor;
+package com.simple.web.common.Interceptor;
 
 
 import lombok.extern.slf4j.Slf4j;

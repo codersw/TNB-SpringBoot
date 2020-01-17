@@ -1,7 +1,7 @@
-package com.simple.common.config;
+package com.simple.web.common.config;
 
 
-import com.simple.common.Interceptor.AuthorizationInterceptor;
+import com.simple.web.common.Interceptor.AuthorizationInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

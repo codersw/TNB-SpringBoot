@@ -1,13 +1,13 @@
-package com.simple.controller;
+package com.simple.web.controller;
 
+import com.simple.model.User;
+import com.simple.service.IUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.simple.service.IUserService;
-import com.simple.model.User;
 import com.simple.model.PageRequest;
 import com.simple.model.Result;
 import com.simple.model.ResultGenerator;

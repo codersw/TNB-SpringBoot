@@ -32,9 +32,9 @@
         <module>generator</module>
         <module>model</module>
         <module>mapper</module>
+        <module>common</module>
         <module>service</module>
         <module>web</module>
-        <module>common</module>
     </modules>
 
     <dependencies>
@@ -123,7 +123,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>WebApplication</mainClass>
+                    <mainClass>com.simple.controller.WebApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

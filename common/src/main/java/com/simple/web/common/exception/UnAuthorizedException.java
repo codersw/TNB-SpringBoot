@@ -1,4 +1,4 @@
-package com.simple.common.exception;
+package com.simple.web.common.exception;
 
 /**
  * 未授权异常

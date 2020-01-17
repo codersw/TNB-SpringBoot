@@ -1,4 +1,4 @@
-package com.simple.common.runner;
+package com.simple.web.common.runner;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

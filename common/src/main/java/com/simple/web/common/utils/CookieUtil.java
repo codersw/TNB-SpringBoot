@@ -1,4 +1,4 @@
-package com.simple.common.utils;
+package com.simple.web.common.utils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
