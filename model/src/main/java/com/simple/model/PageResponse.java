@@ -1,4 +1,4 @@
-package com.simple.model.base;
+package com.simple.model;
 
 
 import io.swagger.annotations.ApiModel;

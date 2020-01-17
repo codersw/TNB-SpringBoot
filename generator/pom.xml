@@ -16,7 +16,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <freemarker.version>2.3.29</freemarker.version>
         <mybatisplus-generator.version>3.3.0</mybatisplus-generator.version>

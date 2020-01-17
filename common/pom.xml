@@ -18,7 +18,6 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <orika.version>1.5.4</orika.version>
     </properties>
 
@@ -29,7 +28,7 @@
             <artifactId>orika-core</artifactId>
             <version>${orika.version}</version>
         </dependency>
-        
+
         <!--model模块-->
         <dependency>
             <groupId>com.simple</groupId>
@@ -37,5 +36,4 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
 </project>

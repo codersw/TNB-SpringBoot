@@ -2,9 +2,9 @@ package com.simple.common.handler;
 
 
 import com.simple.common.exception.UnAuthorizedException;
-import com.simple.model.base.Result;
-import com.simple.model.base.ResultCodeEnum;
-import com.simple.model.base.ResultGenerator;
+import com.simple.model.Result;
+import com.simple.model.ResultCodeEnum;
+import com.simple.model.ResultGenerator;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.core.Ordered;

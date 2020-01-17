@@ -114,16 +114,14 @@
         </dependency>
     </dependencies>
 
-
     <build>
         <plugins>
-            <!--maven打包插件-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.simple.controller.WebApplication</mainClass>
+                    <mainClass>com.simple.web.WebApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -134,12 +132,11 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--maven打包时跳过单元测试 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <skip>true</skip>
+                    <skipTests>true</skipTests> <!--默认关掉单元测试 -->
                 </configuration>
             </plugin>
         </plugins>
