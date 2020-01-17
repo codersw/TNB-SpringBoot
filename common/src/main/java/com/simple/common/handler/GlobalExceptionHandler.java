@@ -1,9 +1,9 @@
-package com.simple.web.common.handler;
+package com.simple.common.handler;
 
 
 import com.simple.model.Result;
 import com.simple.model.ResultGenerator;
-import com.simple.web.common.exception.UnAuthorizedException;
+import com.simple.common.exception.UnAuthorizedException;
 import com.simple.model.enums.ResultCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;

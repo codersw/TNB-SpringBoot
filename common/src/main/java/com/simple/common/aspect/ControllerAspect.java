@@ -1,9 +1,7 @@
-package com.simple.web.common.aspect;
+package com.simple.common.aspect;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.simple.web.common.utils.CommonUtils;
-import com.simple.model.constant.MdcConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -25,7 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 public class ControllerAspect {
 
     /** 以 controller 包下定义的所有请求为切入点 */
-    @Pointcut("execution(public * com.mango.require.controller.*.*(..))")
+    @Pointcut("execution(public * com.simple.web.controller.*.*(..))")
     public void webLog() {}
 
     /**

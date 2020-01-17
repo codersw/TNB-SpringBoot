@@ -1,4 +1,4 @@
-package com.simple.web.common.utils;
+package com.simple.common.utils;
 
 import ma.glasnost.orika.MapperFactory;
 import ma.glasnost.orika.impl.DefaultMapperFactory;
