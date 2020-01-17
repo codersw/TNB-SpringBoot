@@ -70,8 +70,16 @@ public class Generator {
         pc.setParent("com.simple");
         pc.setEntity("model");
         pc.setController("web.controller");
+        //自定义生成路径信息
+        Map<String, String> pathInfo = new HashMap<>(6);
+        pathInfo.put(ConstVal.ENTITY_PATH, projectPath + "/model/src/main/java/"+ pc.getParent().replace(".","/") + "/model/");
+        pathInfo.put(ConstVal.MAPPER_PATH, projectPath + "/mapper/src/main/java/"+ pc.getParent().replace(".","/") + "/mapper/");
+        pathInfo.put(ConstVal.XML_PATH, projectPath + "/mapper/src/main/resources/mapper/");
+        pathInfo.put(ConstVal.SERVICE_PATH, projectPath + "/service/src/main/java/"+ pc.getParent().replace(".","/") + "/service/");
+        pathInfo.put(ConstVal.SERVICE_IMPL_PATH, projectPath + "/service/src/main/java/"+ pc.getParent().replace(".","/") + "/service/impl/" );
+        pathInfo.put(ConstVal.CONTROLLER_PATH, projectPath + "/web/src/main/java/"+ pc.getParent().replace(".","/") + "/web/controller/" );
+        pc.setPathInfo(pathInfo);
         mpg.setPackageInfo(pc);
-
 
         //自定义配置
         InjectionConfig cfg = new InjectionConfig() {
@@ -80,58 +88,6 @@ public class Generator {
                 // to do nothing
             }
         };
-
-        //自定义输出配置
-        List<FileOutConfig> focList = new ArrayList<>();
-        //自定义mapper.xml
-        String templateMapperXmlPath = "/generator/templates/mapper.xml.ftl";
-        focList.add(new FileOutConfig(templateMapperXmlPath) {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                return projectPath + "/mapper/src/main/resources/mapper/"+ tableInfo.getMapperName() + StringPool.DOT_XML;
-            }
-        });
-        //自定义mapper
-        String templateMapperPath = "/generator/templates/mapper.java.ftl";
-        focList.add(new FileOutConfig(templateMapperPath) {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                return projectPath + "/mapper/src/main/java/"+ pc.getParent().replace(".","/") + "/mapper/" + tableInfo.getMapperName() + StringPool.DOT_JAVA;
-            }
-        });
-        //自定义entity
-        String templateEntityPath = "/generator/templates/entity.java.ftl";
-        focList.add(new FileOutConfig(templateEntityPath) {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                return projectPath + "/model/src/main/java/"+ pc.getParent().replace(".","/") + "/model/" + tableInfo.getEntityName() + StringPool.DOT_JAVA;
-            }
-        });
-        //自定义service
-        String templateServicePath = "/generator/templates/service.java.ftl";
-        focList.add(new FileOutConfig(templateServicePath) {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                return projectPath + "/service/src/main/java/"+ pc.getParent().replace(".","/") + "/service/" + tableInfo.getServiceName() + StringPool.DOT_JAVA;
-            }
-        });
-        //自定义serviceImpl
-        String templateServiceImplPath = "/generator/templates/serviceImpl.java.ftl";
-        focList.add(new FileOutConfig(templateServiceImplPath) {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                return projectPath + "/service/src/main/java/"+ pc.getParent().replace(".","/") + "/service/impl/" + tableInfo.getServiceImplName() + StringPool.DOT_JAVA;
-            }
-        });
-        //自定义controller
-        String templateControllerPath = "/generator/templates/controller.java.ftl";
-        focList.add(new FileOutConfig(templateControllerPath) {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                return projectPath + "/web/src/main/java/"+ pc.getParent().replace(".","/") + "/web/controller/" + tableInfo.getControllerName() + StringPool.DOT_JAVA;
-            }
-        });
-        cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
 
         //配置模板

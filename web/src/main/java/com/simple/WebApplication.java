@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.mango.mapper")
+@MapperScan("com.simple.mapper")
 public class WebApplication {
 
     public static void main(String[] args) {

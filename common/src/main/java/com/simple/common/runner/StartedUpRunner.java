@@ -16,7 +16,7 @@ public class StartedUpRunner implements ApplicationRunner {
     @Resource
     private ConfigurableApplicationContext context;
 
-    @Value("${spring.application.name:require}")
+    @Value("${spring.application.name:simple}")
     private String applicationName;
 
     @Override
