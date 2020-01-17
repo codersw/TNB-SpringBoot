@@ -21,6 +21,11 @@
     </properties>
 
     <dependencies>
+        <!--aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
         <!--service模块-->
         <dependency>
             <groupId>com.simple</groupId>

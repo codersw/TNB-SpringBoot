@@ -8,9 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.simple.model.PageRequest;
-import com.simple.model.Result;
-import com.simple.model.ResultGenerator;
+import com.simple.model.enums.PageRequest;
+import com.simple.model.base.Result;
+import com.simple.model.base.ResultGenerator;
 import javax.annotation.Resource;
 
 /**

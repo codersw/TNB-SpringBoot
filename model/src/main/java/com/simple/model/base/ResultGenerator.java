@@ -1,8 +1,7 @@
-package com.simple.model;
+package com.simple.model.base;
 
 
 import com.simple.model.constant.MdcConstant;
-import com.simple.model.enums.ResultCodeEnum;
 import org.slf4j.MDC;
 
 /**

@@ -2,8 +2,8 @@ package com.simple.service;
 
 import com.simple.model.User;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.simple.model.PageRequest;
-import com.simple.model.PageResponse;
+import com.simple.model.enums.PageRequest;
+import com.simple.model.base.PageResponse;
 
 /**
  * <p>

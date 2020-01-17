@@ -1,4 +1,6 @@
-package com.simple.model.enums;
+package com.simple.model.base;
+
+import com.simple.model.enums.BaseEnum;
 
 /**
  * 响应值枚举

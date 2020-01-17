@@ -23,17 +23,13 @@
     </properties>
 
     <dependencies>
-        <!--aop-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
         <!-- orika实体拷贝框架-->
         <dependency>
             <groupId>ma.glasnost.orika</groupId>
             <artifactId>orika-core</artifactId>
             <version>${orika.version}</version>
         </dependency>
+        
         <!--model模块-->
         <dependency>
             <groupId>com.simple</groupId>

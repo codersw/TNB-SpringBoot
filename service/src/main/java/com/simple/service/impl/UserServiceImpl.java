@@ -1,8 +1,8 @@
 package com.simple.service.impl;
 
 import com.simple.model.User;
-import com.simple.model.PageRequest;
-import com.simple.model.PageResponse;
+import com.simple.model.enums.PageRequest;
+import com.simple.model.base.PageResponse;
 import com.simple.mapper.UserMapper;
 import com.simple.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

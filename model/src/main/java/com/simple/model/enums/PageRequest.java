@@ -1,6 +1,5 @@
-package com.simple.model;
+package com.simple.model.enums;
 
-import com.simple.model.enums.PageEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
