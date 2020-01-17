@@ -1,4 +1,4 @@
-package com.simple.web.aspect;
+package com.simple.aspect;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;

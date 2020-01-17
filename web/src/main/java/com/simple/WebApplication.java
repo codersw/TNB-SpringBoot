@@ -1,4 +1,4 @@
-package com.simple.web;
+package com.simple;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
