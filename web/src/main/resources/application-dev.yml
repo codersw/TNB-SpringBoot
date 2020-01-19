@@ -28,6 +28,7 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+    locale: zh_CN
 #此配置开启mybatis sql打印
 logging:
   level:
