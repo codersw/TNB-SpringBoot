@@ -22,7 +22,7 @@ import javax.annotation.Resource;
  * </p>
  *
  * @author swen
- * @since 2020-01-17
+ * @since 2020-01-19
  */
 @Api(value = "用户信息接口", tags = {"用户信息接口"})
 @Slf4j

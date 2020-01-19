@@ -59,7 +59,7 @@ public class Generator {
 
         //数据源配置
         DataSourceConfig dc = new DataSourceConfig();
-        dc.setUrl("jdbc:mysql://localhost:3306/require?characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false");
+        dc.setUrl("jdbc:mysql://localhost:3306/simple?characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false");
         dc.setDriverName("com.mysql.cj.jdbc.Driver");
         dc.setUsername("root");
         dc.setPassword("123456");
